@@ -19,7 +19,7 @@ const Tours = ({ title, buttonText }) => {
             </div>
             {buttonText &&
                 <div className='flex justify-center lg:justify-end mb-20'>
-                    <button className='bg-[#0070C0] px-8 py-2 rounded-[5px] text-white '>
+                    <button className='bg-[#0070C0] px-8 py-2 rounded-[5px] text-white hover:scale-105 transition-all ease-in-out duration-300'>
                         {buttonText}
                     </button>
                 </div>

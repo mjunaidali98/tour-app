@@ -5,11 +5,17 @@ const Card = ({ card }) => {
     const [rating, setRating] = useState(0);
     const [hover, setHover] = useState(0);
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col rounded-[10px] '>
             <div className='relative rounded-[10px] '>
                 <img className='rounded-t-[10px] w-full h-full' src={card.image} />
                 <img className='absolute right-0 top-0 rounded-[10px]' src='/assets/landingpage/red_rectangle.png' />
                 <p className='absolute right-2 top-2.5 rotate-45 f-f-p text-base text-white '>{card.percent}</p>
+                <div role={"button"} onClick={() => rating ? setRating(0) : setRating(1)} className={`absolute bottom-5 right-10  transition-all ease-in-out duration-300  hover:text-[#EC2846] ${rating ? "text-[#EC2846]" : "text-white"}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="44" height="44" viewBox="0 0 24 24" strokeWidth="0" stroke="#2c3e50" fill="currentColor" strokeLinecap="round" strokeLinejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+                </div>
             </div>
             <div className='flex flex-col f-f-p p-4 space-y-2 border border-[#DDDDDD] border-t-0 rounded-[10px] rounded-t-none'>
                 <p className='text-xl leading-[23px] text-primary-black'>{card.title}</p>
@@ -46,7 +52,7 @@ const Card = ({ card }) => {
                         <p className='text-[15px] md:text-xl text-[#EC2846] leading-[17px] line-through'>{card.from}</p>
                         <p className='text-[25px] md:text-3xl text-[#0070C0] leading-[30px] font-bold'>{card.from}</p>
                     </div>
-                    <button className='bg-[#0070C0] px-10 py-2 rounded-[5px] text-white'>
+                    <button className='bg-[#0070C0] px-10 py-2 rounded-[5px] text-white hover:scale-110 transition-all ease-in-out duration-300'>
                         Select
                     </button>
                 </div>
