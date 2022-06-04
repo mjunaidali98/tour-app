@@ -46,6 +46,156 @@ export const tour = [
         "reviews": 3,
         "from": "$2100",
         "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t3.png",
+        "percent": "47%",
+        "title": "American Parks Trail end Rapid City",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t1.png",
+        "percent": "47%",
+        "title": "New York: Museum of Modern Art",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t2.png",
+        "percent": "47%",
+        "title": "Los Angeles to San Francisco Express",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t3.png",
+        "percent": "47%",
+        "title": "American Parks Trail end Rapid City",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t1.png",
+        "percent": "47%",
+        "title": "New York: Museum of Modern Art",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t2.png",
+        "percent": "47%",
+        "title": "Los Angeles to San Francisco Express",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t3.png",
+        "percent": "47%",
+        "title": "American Parks Trail end Rapid City",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t1.png",
+        "percent": "47%",
+        "title": "New York: Museum of Modern Art",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t2.png",
+        "percent": "47%",
+        "title": "Los Angeles to San Francisco Express",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t3.png",
+        "percent": "47%",
+        "title": "American Parks Trail end Rapid City",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t1.png",
+        "percent": "47%",
+        "title": "New York: Museum of Modern Art",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t2.png",
+        "percent": "47%",
+        "title": "Los Angeles to San Francisco Express",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t3.png",
+        "percent": "47%",
+        "title": "American Parks Trail end Rapid City",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t1.png",
+        "percent": "47%",
+        "title": "New York: Museum of Modern Art",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
+    },
+    {
+        "image": "/assets/landingpage/t2.png",
+        "percent": "47%",
+        "title": "Los Angeles to San Francisco Express",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414"
     }
 ]
 export const destinations = [

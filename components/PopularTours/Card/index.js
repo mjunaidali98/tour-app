@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Card = ({ card }) => {
+const Card = ({ card, smallSize }) => {
 
     const [rating, setRating] = useState(0);
     const [hover, setHover] = useState(0);
@@ -18,14 +18,14 @@ const Card = ({ card }) => {
                 </div>
             </div>
             <div className='flex flex-col f-f-p p-4 space-y-2 border border-[#DDDDDD] border-t-0 rounded-[10px] rounded-t-none'>
-                <p className='text-xl leading-[23px] text-primary-black'>{card.title}</p>
+                <p className={`text-[15px] md:${smallSize ? "" : "text-xl"} leading-[23px] text-primary-black`}>{card.title}</p>
                 <div className='flex justify-between w-full'>
                     <div className='flex space-x-3 items-center'>
                         <img src='/assets/landingpage/small_pointer.png' />
-                        <p className='text-sm text-primary-gray leading-[17px]'>{card.location}</p>
+                        <p className={`text-[12px] sm:${smallSize ? "" : 'text-sm'} text-primary-gray leading-[17px]`}>{card.location}</p>
                     </div>
                     <div className='flex items-center space-x-1'>
-                        <p className='text-sm text-primary-gray leading-[17px] pr-1'>{`${card.reviews} Reviews `} </p>
+                        <p className='text-[12px] sm:text-sm text-primary-gray leading-[17px] pr-1'>{`${card.reviews} Reviews `} </p>
                         {[...Array(card.reviews)].map((star, index) => {
                             index += 1;
                             return (
@@ -44,15 +44,15 @@ const Card = ({ card }) => {
                 </div>
                 <div className='flex space-x-3 items-center '>
                     <img src='/assets/landingpage/compass.png' />
-                    <p className='text-sm text-primary-gray leading-[17px]'>{card.time}</p>
+                    <p className={`text-[12px] sm:${smallSize ? "" : 'text-sm'} text-primary-gray leading-[17px]`}>{card.time}</p>
                 </div>
                 <div className='flex justify-between items-center f-f-p'>
                     <div className='flex items-center space-x-3'>
-                        <p className='text-sm text-primary-gray leading-[17px]'>From</p>
-                        <p className='text-[15px] md:text-xl text-[#EC2846] leading-[17px] line-through'>{card.from}</p>
-                        <p className='text-[25px] md:text-3xl text-[#0070C0] leading-[30px] font-bold'>{card.from}</p>
+                        <p className={`text-[12px] sm:${smallSize ? "" : 'text-sm'} text-primary-gray leading-[17px]`}>From</p>
+                        <p className={`text-[15px] md:${smallSize ? "" : 'text-xl'} text-[#EC2846] leading-[17px] line-through`}>{card.from}</p>
+                        <p className={` ${smallSize ? "text-[20px]" : 'text-[25px]'} lg:${smallSize ? "" : 'text-3xl'} text-[#0070C0] leading-[30px] font-bold`}>{card.from}</p>
                     </div>
-                    <button className='bg-[#0070C0] px-10 py-2 rounded-[5px] text-white hover:scale-110 transition-all ease-in-out duration-300'>
+                    <button className={`bg-[#0070C0] ${smallSize ? "px-7" : 'px-10'} py-2 rounded-[5px] text-white hover:scale-110 transition-all ease-in-out duration-300`}>
                         Select
                     </button>
                 </div>

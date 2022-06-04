@@ -10,7 +10,7 @@ const Tours = ({ title, buttonText }) => {
                     {title}
                 </h1>
                 <div className='grid grid-col-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 py-10 md:py-12 lg:py-16 xl:py-20'>
-                    {tour.map((_card, idx) => {
+                    {tour.slice(0,3).map((_card, idx) => {
                         return (
                             <Card card={_card} key={idx} />
                         )
