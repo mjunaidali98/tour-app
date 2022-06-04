@@ -3,7 +3,7 @@ import React from 'react'
 const Highlight = () => {
     return (
         <div className='my-10 relative'>
-            <img className='w-full h-[430px] md:min-h-[694px]  object-cover object-center' src='/assets/landingpage/effel.png' />
+            <img className='w-full h-[430px] md:min-h-[694px]  object-cover object-center' src='/assets/landingpage/Effel.png' />
             <div className='z-10 absolute inset-0 h-full w-full bg-[#0070C0] bg-opacity-70'>
                 <div className='z-20 flex flex-col space-y-5 lg:space-y-10 items-center justify-center w-full h-full'>
                     <p className='f-f-p text-3xl md:text-4xl lg:text-[40px] xl:text-[50px] leading-[36px] text-white font-bold'>
