@@ -3,6 +3,49 @@ import InputRange from 'react-input-range';
 import "react-input-range/lib/css/index.css"
 const Filter = () => {
     const [range, setRange] = useState({ start: 20, end: 80 })
+    const [box, setBox] = useState(true);
+    const tourType = [
+        {
+            name: "City trips",
+        },
+        {
+            name: "Ecotourism",
+        },
+        {
+            name: "Escorted tour",
+        },
+        {
+            name: "City trips",
+        },
+        {
+            name: "Ecotourism",
+        },
+        {
+            name: "Escorted tour",
+        }
+    ]
+    const travelStyle = [
+        {
+            name: "Cultural",
+        },
+        {
+            name: "Nature & Adventure",
+        },
+        {
+            name: "Marine",
+        },
+        {
+            name: "Cultural",
+        },
+        {
+            name: "Nature & Adventure",
+        },
+        {
+            name: "Marine",
+        }
+    ]
+    const [numberOfTour, setNumberOfTour] = useState(3);
+    const [travelStyleNumber, setTravelStyleNumber] = useState(3);
 
     return (
         <div className='w-full hidden lg:w-3/12 lg:flex flex-col space-y-6'>
@@ -55,7 +98,7 @@ const Filter = () => {
                 </div>
             </div>
 
-            <div className='h-[173px] w-full flex flex-col space-y-6 border border-[#D1D1D1] rounded-xl f-f-p relative'>
+            {/* <div className='h-[173px] w-full flex flex-col space-y-6 border border-[#D1D1D1] rounded-xl f-f-p relative'>
                 <InputRange
                 step={2}
                     maxValue={20}
@@ -63,8 +106,118 @@ const Filter = () => {
                     value={range}
                     onChange={range => setRange(range)} />
 
+            </div> */}
+            <div className='w-full flex flex-col space-y-6 border border-[#D1D1D1] rounded-xl f-f-p '>
+                <div className='flex flex-col space-y-4 px-6 py-7 border-b border-[#D1D1D1]'>
+                    <div className='flex items-center justify-between'>
+                        <p className='text-xl leading-[30px] font-medium'>Review Score</p>
+                        <svg role={"button"} onClick={() => setBox(!box)} className={`${box ? "" : "rotate-180 transition-all ease-in-out duration-300"}`} width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.0231 12.0276C4.50262 10.4063 5.97247 8.77427 7.44715 7.14228L9.10916 5.39676L10.9429 7.10494C12.4224 8.74227 13.9068 10.3743 15.3863 12.0116C15.7973 12.4649 16.2856 12.6356 16.8465 12.4809C17.9924 12.1663 18.3598 10.6303 17.5137 9.69161C14.7916 6.67294 12.0598 3.66495 9.33765 0.651614C9.30381 0.614281 9.26513 0.582281 9.17326 0.496948C9.12008 0.576948 9.0814 0.667614 9.01854 0.736948C7.50034 2.42228 5.98214 4.09694 4.4591 5.77694C3.28902 7.06761 2.12378 8.35827 0.953699 9.64361C0.518547 10.1236 0.344486 10.6836 0.518547 11.3449C0.837659 12.5609 2.1963 12.9343 3.0231 12.0276Z" fill="#757575" />
+                        </svg>
+                    </div>
+                    {box && [...Array(5)].map((item, idx) => {
+                        return (
+                            <div className='flex items-center space-x-2'>
+                                <div className="bg-white dark:bg-gray-800 border rounded-sm border-[#DDDDDD] w-3 h-3 flex flex-shrink-0 justify-center items-center relative">
+                                    <input type="checkbox" className="checkbox opacity-0 absolute cursor-pointer w-full h-full" />
+                                    <div className="check-icon hidden bg-[#0070C0] text-white rounded-sm">
+                                        <svg className="icon icon-tabler icon-tabler-check" xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                            <path d="M5 12l5 5l10 -10" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                {[...Array(5 - idx)].map((item, idx) => {
+                                    return (
+                                        <span
+                                            key={idx}
+                                            className={"bg-transparent focus:outline-none star"}
+                                        >
+                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.8024 0.858643L9.50722 6.10554H15.0241L10.5609 9.3483L12.2657 14.5952L7.8024 11.3524L3.33912 14.5952L5.04394 9.3483L0.580662 6.10554H6.09758L7.8024 0.858643Z" fill="#FA5636" />
+                                            </svg>
+                                        </span>
+                                    )
+                                })}
+                            </div>
+                        )
+                    })}
+                </div>
+                {/* Tour Type */}
+                <div className='flex flex-col space-y-4 px-6 py-7 border-b border-[#D1D1D1]'>
+                    <div className='flex items-center justify-between'>
+                        <p className='text-xl leading-[30px] font-medium'>Tour Type</p>
+                        <svg role={"button"} onClick={() => setBox(!box)} className={`${box ? "rotate-0" : "rotate-180"}  transition-all ease-in-out duration-300`} width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.0231 12.0276C4.50262 10.4063 5.97247 8.77427 7.44715 7.14228L9.10916 5.39676L10.9429 7.10494C12.4224 8.74227 13.9068 10.3743 15.3863 12.0116C15.7973 12.4649 16.2856 12.6356 16.8465 12.4809C17.9924 12.1663 18.3598 10.6303 17.5137 9.69161C14.7916 6.67294 12.0598 3.66495 9.33765 0.651614C9.30381 0.614281 9.26513 0.582281 9.17326 0.496948C9.12008 0.576948 9.0814 0.667614 9.01854 0.736948C7.50034 2.42228 5.98214 4.09694 4.4591 5.77694C3.28902 7.06761 2.12378 8.35827 0.953699 9.64361C0.518547 10.1236 0.344486 10.6836 0.518547 11.3449C0.837659 12.5609 2.1963 12.9343 3.0231 12.0276Z" fill="#757575" />
+                        </svg>
+                    </div>
+                    {tourType.map((type, idx) => {
+                        return (idx + 1 <= numberOfTour &&
+                            <div className='flex items-center space-x-2'>
+                                <div className="bg-white dark:bg-gray-800 border rounded-sm border-[#DDDDDD] w-3 h-3 flex flex-shrink-0 justify-center items-center relative">
+                                    <input type="checkbox" className="checkbox opacity-0 absolute cursor-pointer w-full h-full" />
+                                    <div className="check-icon hidden bg-[#0070C0] text-white rounded-sm">
+                                        <svg className="icon icon-tabler icon-tabler-check" xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                            <path d="M5 12l5 5l10 -10" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p className='text-[15px] text-[#6D6542]'>{type.name}</p>
+                            </div>
+                        )
+                    })}
+                    <div role={"button"} onClick={() => numberOfTour === tourType.length ? setNumberOfTour(3) : setNumberOfTour(tourType.length)} className='flex items-center space-x-2'>
+                        <p className='text-[#0070C0] text-[15px] leading-[22px] font-medium'>
+                            {numberOfTour === tourType.length ? "Less" : "More"}
+                        </p>
+                        <svg width="11" height="8" className={`${numberOfTour !== tourType.length ? "rotate-0" : "rotate-180"}  transition-all ease-in-out duration-300`} viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.37497 1.29113C8.52494 2.22264 7.68046 3.16028 6.8332 4.09792L5.87832 5.10078L4.82478 4.11937C3.97475 3.17867 3.12193 2.24103 2.2719 1.30033C2.03578 1.03987 1.75521 0.941816 1.43297 1.03068C0.774612 1.21146 0.563492 2.09395 1.04962 2.63324C2.61358 4.36757 4.18309 6.09577 5.74704 7.82703C5.76649 7.84848 5.78871 7.86687 5.84149 7.91589C5.87205 7.86993 5.89427 7.81784 5.93038 7.77801C6.80264 6.80972 7.6749 5.84757 8.54994 4.88235C9.22219 4.14082 9.89166 3.39929 10.5639 2.66082C10.8139 2.38505 10.9139 2.06331 10.8139 1.68335C10.6306 0.984715 9.84999 0.770223 9.37497 1.29113Z" fill="#757575" />
+                        </svg>
+                    </div>
+                </div>
+                {/* Travel Style */}
+                <div className='flex flex-col space-y-4 px-6 py-7 border-b border-[#D1D1D1]'>
+                    <div className='flex items-center justify-between'>
+                        <p className='text-xl leading-[30px] font-medium'>Travel Style</p>
+                        <svg role={"button"} onClick={() => setBox(!box)} className={`${box ? "rotate-0" : "rotate-180"}  transition-all ease-in-out duration-300`} width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.0231 12.0276C4.50262 10.4063 5.97247 8.77427 7.44715 7.14228L9.10916 5.39676L10.9429 7.10494C12.4224 8.74227 13.9068 10.3743 15.3863 12.0116C15.7973 12.4649 16.2856 12.6356 16.8465 12.4809C17.9924 12.1663 18.3598 10.6303 17.5137 9.69161C14.7916 6.67294 12.0598 3.66495 9.33765 0.651614C9.30381 0.614281 9.26513 0.582281 9.17326 0.496948C9.12008 0.576948 9.0814 0.667614 9.01854 0.736948C7.50034 2.42228 5.98214 4.09694 4.4591 5.77694C3.28902 7.06761 2.12378 8.35827 0.953699 9.64361C0.518547 10.1236 0.344486 10.6836 0.518547 11.3449C0.837659 12.5609 2.1963 12.9343 3.0231 12.0276Z" fill="#757575" />
+                        </svg>
+                    </div>
+                    {travelStyle.map((type, idx) => {
+                        return (idx + 1 <= travelStyleNumber &&
+                            <div className='flex items-center space-x-2'>
+                                <div className="bg-white dark:bg-gray-800 border rounded-sm border-[#DDDDDD] w-3 h-3 flex flex-shrink-0 justify-center items-center relative">
+                                    <input type="checkbox" className="checkbox opacity-0 absolute cursor-pointer w-full h-full" />
+                                    <div className="check-icon hidden bg-[#0070C0] text-white rounded-sm">
+                                        <svg className="icon icon-tabler icon-tabler-check" xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                            <path d="M5 12l5 5l10 -10" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p className='text-[15px] text-[#6D6542]'>{type.name}</p>
+                            </div>
+                        )
+                    })}
+                    <div role={"button"} onClick={() => travelStyleNumber === travelStyle.length ? setTravelStyleNumber(3) : setTravelStyleNumber(travelStyle.length)} className='flex items-center space-x-2'>
+                        <p className='text-[#0070C0] text-[15px] leading-[22px] font-medium'>
+                            {travelStyleNumber === tourType.length ? "Less" : "More"}
+                        </p>
+                        <svg width="11" height="8" className={`${travelStyleNumber !== travelStyle.length ? "rotate-0" : "rotate-180"}  transition-all ease-in-out duration-300`} viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.37497 1.29113C8.52494 2.22264 7.68046 3.16028 6.8332 4.09792L5.87832 5.10078L4.82478 4.11937C3.97475 3.17867 3.12193 2.24103 2.2719 1.30033C2.03578 1.03987 1.75521 0.941816 1.43297 1.03068C0.774612 1.21146 0.563492 2.09395 1.04962 2.63324C2.61358 4.36757 4.18309 6.09577 5.74704 7.82703C5.76649 7.84848 5.78871 7.86687 5.84149 7.91589C5.87205 7.86993 5.89427 7.81784 5.93038 7.77801C6.80264 6.80972 7.6749 5.84757 8.54994 4.88235C9.22219 4.14082 9.89166 3.39929 10.5639 2.66082C10.8139 2.38505 10.9139 2.06331 10.8139 1.68335C10.6306 0.984715 9.84999 0.770223 9.37497 1.29113Z" fill="#757575" />
+                        </svg>
+                    </div>
+                </div>
             </div>
+
+            <style>
+                {`  .checkbox:checked + .check-icon {
+                            display: flex;
+                        }`}
+            </style>
         </div>
+
     )
 }
 
