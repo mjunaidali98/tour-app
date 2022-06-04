@@ -1,16 +1,15 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.f-f-p {
+  font-family: 'Poppins', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.f-f-r {
+  font-family: 'Roboto', sans-serif;
 }
 
-* {
-  box-sizing: border-box;
+.black-mask {
+  background: linear-gradient(0deg, #000000 0%, rgba(105, 104, 104, 0) 35%) !important;
 }
