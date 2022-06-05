@@ -117,7 +117,7 @@ const Filter = () => {
                     </div>
                     {box && [...Array(5)].map((item, idx) => {
                         return (
-                            <div className='flex items-center space-x-2'>
+                            <div key={idx} className='flex items-center space-x-2'>
                                 <div className="bg-white dark:bg-gray-800 border rounded-sm border-[#DDDDDD] w-3 h-3 flex flex-shrink-0 justify-center items-center relative">
                                     <input type="checkbox" className="checkbox opacity-0 absolute cursor-pointer w-full h-full" />
                                     <div className="check-icon hidden bg-[#0070C0] text-white rounded-sm">
@@ -153,7 +153,7 @@ const Filter = () => {
                     </div>
                     {tourType.map((type, idx) => {
                         return (idx + 1 <= numberOfTour &&
-                            <div className='flex items-center space-x-2'>
+                            <div key={idx} className='flex items-center space-x-2'>
                                 <div className="bg-white dark:bg-gray-800 border rounded-sm border-[#DDDDDD] w-3 h-3 flex flex-shrink-0 justify-center items-center relative">
                                     <input type="checkbox" className="checkbox opacity-0 absolute cursor-pointer w-full h-full" />
                                     <div className="check-icon hidden bg-[#0070C0] text-white rounded-sm">
@@ -186,7 +186,7 @@ const Filter = () => {
                     </div>
                     {travelStyle.map((type, idx) => {
                         return (idx + 1 <= travelStyleNumber &&
-                            <div className='flex items-center space-x-2'>
+                            <div key={idx} className='flex items-center space-x-2'>
                                 <div className="bg-white dark:bg-gray-800 border rounded-sm border-[#DDDDDD] w-3 h-3 flex flex-shrink-0 justify-center items-center relative">
                                     <input type="checkbox" className="checkbox opacity-0 absolute cursor-pointer w-full h-full" />
                                     <div className="check-icon hidden bg-[#0070C0] text-white rounded-sm">
