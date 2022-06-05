@@ -198,6 +198,207 @@ export const tour = [
         "now": "$414"
     }
 ]
+
+export const mapTour = [
+    {
+        "image": "/assets/landingpage/t3.png",
+        "percent": "47%",
+        "title": "American Parks Trail end Rapid City",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t1.png",
+        "percent": "47%",
+        "title": "New York: Museum of Modern Art",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t2.png",
+        "percent": "47%",
+        "title": "Los Angeles to San Francisco Express",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t3.png",
+        "percent": "47%",
+        "title": "American Parks Trail end Rapid City",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t1.png",
+        "percent": "47%",
+        "title": "New York: Museum of Modern Art",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t2.png",
+        "percent": "47%",
+        "title": "Los Angeles to San Francisco Express",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t3.png",
+        "percent": "47%",
+        "title": "American Parks Trail end Rapid City",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t1.png",
+        "percent": "47%",
+        "title": "New York: Museum of Modern Art",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t2.png",
+        "percent": "47%",
+        "title": "Los Angeles to San Francisco Express",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t3.png",
+        "percent": "47%",
+        "title": "American Parks Trail end Rapid City",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t1.png",
+        "percent": "47%",
+        "title": "New York: Museum of Modern Art",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t2.png",
+        "percent": "47%",
+        "title": "Los Angeles to San Francisco Express",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t3.png",
+        "percent": "47%",
+        "title": "American Parks Trail end Rapid City",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t1.png",
+        "percent": "47%",
+        "title": "New York: Museum of Modern Art",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t2.png",
+        "percent": "47%",
+        "title": "Los Angeles to San Francisco Express",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t3.png",
+        "percent": "47%",
+        "title": "American Parks Trail end Rapid City",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t1.png",
+        "percent": "47%",
+        "title": "New York: Museum of Modern Art",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    },
+    {
+        "image": "/assets/landingpage/t2.png",
+        "percent": "47%",
+        "title": "Los Angeles to San Francisco Express",
+        "location": "Kingston",
+        "time": "Approximately: 9H (excl. travel time)",
+        "reviews": 3,
+        "from": "$2100",
+        "now": "$414",
+        "feature": true
+    }
+]
 export const destinations = [
     {
         "image": "/assets/landingpage/d1.png",
@@ -257,20 +458,20 @@ export const articles = [
     }
 ]
 
-export const logos =[
+export const logos = [
     {
-        image:"/assets/landingpage/pepsico.png"
+        image: "/assets/landingpage/pepsico.png"
     },
     {
-        image:"/assets/landingpage/dunkin.png"
+        image: "/assets/landingpage/dunkin.png"
     },
     {
-        image:"/assets/landingpage/orange.png"
+        image: "/assets/landingpage/orange.png"
     },
     {
-        image:"/assets/landingpage/airtable.png"
+        image: "/assets/landingpage/airtable.png"
     },
     {
-        image:"/assets/landingpage/hubspot.png"
+        image: "/assets/landingpage/hubspot.png"
     }
 ]

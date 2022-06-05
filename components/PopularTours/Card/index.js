@@ -16,13 +16,19 @@ const Card = ({ card, smallSize }) => {
                         <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
                     </svg>
                 </div>
+                {card.feature &&
+                
+                    <div className='absolute left-0 top-10 bg-[#0070C0] rounded-r-[3px] w-[98px]'>
+                        <p className='text-base text-center text-white leading-[24px] f-f-p'>Featured</p>
+                    </div>
+                }
             </div>
             <div className='flex flex-col f-f-p p-4 space-y-2 border border-[#DDDDDD] border-t-0 rounded-[10px] rounded-t-none'>
-                <p className={`text-[15px] md:${smallSize ? "" : "text-xl"} leading-[23px] text-primary-black`}>{card.title}</p>
+                <p className={`text-[15px] md:${smallSize ? "leading-[23px] " : "text-xl"} leading-[23px] text-primary-black truncate`}>{card.title}</p>
                 <div className='flex justify-between w-full'>
                     <div className='flex space-x-3 items-center'>
                         <img src='/assets/landingpage/small_pointer.png' />
-                        <p className={`text-[12px] sm:${smallSize ? "" : 'text-sm'} text-primary-gray leading-[17px]`}>{card.location}</p>
+                        <p className={`text-[12px] sm:${smallSize ? "leading-[17px] " : 'text-sm'} text-primary-gray leading-[17px]`}>{card.location}</p>
                     </div>
                     <div className='flex items-center space-x-1'>
                         <p className='text-[12px] sm:text-sm text-primary-gray leading-[17px] pr-1'>{`${card.reviews} Reviews `} </p>
