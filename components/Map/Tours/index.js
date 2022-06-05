@@ -31,7 +31,7 @@ const Tours = () => {
 
                 {listToMatrix(mapTour, limit).map((item, idx) => {
                     return (
-                        <span onClick={() => setPage(idx)} className={`f-f-p mx-2 h-8 w-8  flex items-center justify-center text-lg ${idx === page ? "border border-[#0070C0]" : ""}`}>{idx + 1}</span>
+                        <span key={idx} onClick={() => setPage(idx)} className={`f-f-p mx-2 h-8 w-8  flex items-center justify-center text-lg ${idx === page ? "border border-[#0070C0]" : ""}`}>{idx + 1}</span>
                     )
                 })}
 
